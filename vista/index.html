@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script type="text/javascript" src="../js/control.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <form name="form1" id="form1">
+        <table border="1" align="center" width="500">
+
+            <tr>
+                <td colspan="2" align="center">Operación matemática</td>
+            </tr>
+
+            <tr>
+                <td align="center">Primer Valor</td>
+                <td>
+                    <input type="text" id="valor1" name="valor1" size="20" maxlength="5" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">Segundo Valor</td>
+                <td>
+                    <input type="text" id="valor2" name="valor2" size="20" maxlength="5" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">Resultado</td>
+                <td><input type="text" id="resultado" name="resultado" readonly /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Sumar" onclick="sumar()">
+                    <input type="button" value="Restar" onclick="restar()">
+                    <input type="button" value="Multiplicar" onclick="multiplicar()">
+                    <input type="button" value="Dividir" onclick="dividir()">
+                    <input type="reset" name="limpiar" id="limpiar" value="Limpiar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
